@@ -6,7 +6,8 @@ import Header from '@/components/Header';
 import ToolCard from '@/components/ToolCard';
 import { Tool } from '@/lib/types';
 
-const tools: Tool[] = [
+// Export tools array so it can be used in other components
+export const tools: Tool[] = [
   {
     id: 'plagiarism-checker',
     name: 'Plagiarism Checker',
