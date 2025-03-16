@@ -8,7 +8,7 @@ import VideoDownloader from '@/components/tools/VideoDownloader';
 import ParaphrasingTool from '@/components/tools/ParaphrasingTool';
 import AIDetector from '@/components/tools/AIDetector';
 import GrammarChecker from '@/components/tools/GrammarChecker';
-import { NotFound } from '@/pages/NotFound';
+import NotFound from '@/pages/NotFound';
 
 const ToolsPage = () => {
   const { toolRoute } = useParams();
