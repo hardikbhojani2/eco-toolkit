@@ -55,6 +55,62 @@ export const tools: Tool[] = [
     icon: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h12a2 2 0 0 0 2-2v-2H10v2a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v3h4"/><path d="M19 15V5a2 2 0 0 0-2-2H4"/></svg>',
     bgColor: 'bg-green-600',
     route: 'grammar-checker'
+  },
+  {
+    id: 'age-calculator',
+    name: 'Age Calculator',
+    description: 'Calculate exact age in years, months, and days between two dates.',
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>',
+    bgColor: 'bg-cyan-600',
+    route: 'age-calculator'
+  },
+  {
+    id: 'emi-calculator',
+    name: 'EMI Calculator',
+    description: 'Calculate Equated Monthly Installment (EMI) for loans and mortgages.',
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>',
+    bgColor: 'bg-emerald-600',
+    route: 'emi-calculator'
+  },
+  {
+    id: 'gst-calculator',
+    name: 'GST Calculator',
+    description: 'Calculate Goods and Services Tax (GST) for your products and services.',
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 14v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4"/><path d="M16 16v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3"/><rect x="4" y="8" width="3" height="8" rx="1"/><path d="M2 13h1"/><path d="M21 13h1"/><path d="M2 18h20"/></svg>',
+    bgColor: 'bg-pink-600',
+    route: 'gst-calculator'
+  },
+  {
+    id: 'qr-code-generator',
+    name: 'QR Code Generator',
+    description: 'Generate QR codes for websites, text, phone numbers, and more.',
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="5" height="5" x="3" y="3" rx="1"/><rect width="5" height="5" x="16" y="3" rx="1"/><rect width="5" height="5" x="3" y="16" rx="1"/><path d="M21 16h-3a2 2 0 0 0-2 2v3"/><path d="M21 21v.01"/><path d="M12 7v3a2 2 0 0 1-2 2H7"/><path d="M3 12h.01"/><path d="M12 3h.01"/><path d="M12 16v.01"/><path d="M16 12h1"/><path d="M21 12v.01"/><path d="M12 21v-1"/></svg>',
+    bgColor: 'bg-orange-600',
+    route: 'qr-code-generator'
+  },
+  {
+    id: 'percentage-calculator',
+    name: 'Percentage Calculator',
+    description: 'Calculate percentages, percentage changes, and percentage distributions.',
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="5" x2="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg>',
+    bgColor: 'bg-violet-600',
+    route: 'percentage-calculator'
+  },
+  {
+    id: 'profit-loss-calculator',
+    name: 'Profit-Loss Calculator',
+    description: 'Calculate profit, loss, and profit margins for your business transactions.',
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>',
+    bgColor: 'bg-rose-600',
+    route: 'profit-loss-calculator'
+  },
+  {
+    id: 'area-unit-calculator',
+    name: 'Area Unit Calculator',
+    description: 'Convert between different area units like square meters, acres, hectares, and more.',
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2h8"/><path d="M15 22H9"/><path d="M12 17v5"/><path d="M7 3a10 10 0 0 0 10 0"/><path d="M21 15a10 10 0 0 0-18 0"/></svg>',
+    bgColor: 'bg-teal-600',
+    route: 'area-unit-calculator'
   }
 ];
 
