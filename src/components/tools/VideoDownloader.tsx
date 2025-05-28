@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Progress } from '@/components/ui/progress';
@@ -106,7 +107,44 @@ const VideoDownloader = () => {
   };
 
   return (
-    <div className="animate-fade-in w-full max-w-3xl mx-auto">
+    <div className="animate-fade-in w-full max-w-4xl mx-auto">
+      {/* SEO Content Section */}
+      <div className="glass-panel p-6 mb-6">
+        <div className="prose max-w-none">
+          <h2 className="text-2xl font-semibold mb-4">Free Online Video Downloader</h2>
+          <p className="text-muted-foreground mb-4">
+            Download videos from YouTube, Vimeo, Dailymotion, and other popular video platforms in multiple formats and qualities. 
+            Our fast and secure video downloader supports HD, Full HD, and 4K downloads without any software installation required.
+          </p>
+          
+          <h3 className="text-xl font-medium mb-3">Supported Platforms:</h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-4">
+            <div className="p-2 bg-white/50 dark:bg-black/30 rounded text-center text-sm">YouTube</div>
+            <div className="p-2 bg-white/50 dark:bg-black/30 rounded text-center text-sm">Vimeo</div>
+            <div className="p-2 bg-white/50 dark:bg-black/30 rounded text-center text-sm">Dailymotion</div>
+            <div className="p-2 bg-white/50 dark:bg-black/30 rounded text-center text-sm">More...</div>
+          </div>
+
+          <h3 className="text-xl font-medium mb-3">Key Features:</h3>
+          <ul className="list-disc pl-6 text-muted-foreground mb-4 space-y-1">
+            <li>Download videos in multiple formats (MP4, WebM, 3GP)</li>
+            <li>Multiple quality options from 144p to 4K</li>
+            <li>Fast download speeds with no file size limits</li>
+            <li>No registration or software installation required</li>
+            <li>Mobile-friendly interface for all devices</li>
+            <li>Extract audio-only files (MP3, AAC)</li>
+          </ul>
+
+          <div className="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-4">
+            <p className="text-sm text-yellow-800 dark:text-yellow-200">
+              <strong>Legal Notice:</strong> This tool is for educational purposes only. Please respect copyright laws and 
+              the terms of service of video platforms. Only download content you have permission to use or that is in the public domain.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Tool Interface */}
       <form onSubmit={handleSubmit} className="glass-panel p-6 mb-6">
         <div className="flex flex-col sm:flex-row gap-3 mb-4">
           <Input
@@ -135,7 +173,7 @@ const VideoDownloader = () => {
       </form>
       
       {videoInfo && (
-        <div className="glass-panel p-6 animate-scale-in">
+        <div className="glass-panel p-6 animate-scale-in mb-6">
           <div className="flex flex-col md:flex-row gap-6 mb-6">
             <div className="md:w-1/3">
               <div className="rounded-lg overflow-hidden">
@@ -182,14 +220,29 @@ const VideoDownloader = () => {
                   ))}
                 </div>
               )}
-              
-              <p className="text-xs text-muted-foreground mt-4">
-                Note: This tool is for educational purposes only. Please respect copyright laws and terms of service of the source websites.
-              </p>
             </div>
           </div>
         </div>
       )}
+
+      {/* Related Tools Section */}
+      <div className="glass-panel p-6">
+        <h3 className="text-xl font-medium mb-4">Related Media Tools</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <Link to="/tools/reverse-image-search" className="p-4 bg-white/50 dark:bg-black/30 rounded-lg hover:bg-white/70 dark:hover:bg-black/40 transition-colors">
+            <h4 className="font-medium mb-2">Reverse Image Search</h4>
+            <p className="text-sm text-muted-foreground">Find image sources and similar images</p>
+          </Link>
+          <Link to="/tools/qr-code-generator" className="p-4 bg-white/50 dark:bg-black/30 rounded-lg hover:bg-white/70 dark:hover:bg-black/40 transition-colors">
+            <h4 className="font-medium mb-2">QR Code Generator</h4>
+            <p className="text-sm text-muted-foreground">Generate QR codes for any content</p>
+          </Link>
+          <Link to="/tools/plagiarism-checker" className="p-4 bg-white/50 dark:bg-black/30 rounded-lg hover:bg-white/70 dark:hover:bg-black/40 transition-colors">
+            <h4 className="font-medium mb-2">Plagiarism Checker</h4>
+            <p className="text-sm text-muted-foreground">Verify content originality</p>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };
