@@ -54,6 +54,15 @@ const Header = () => {
           <Link to="/about" className={cn("nav-link", location.pathname === '/about' && "active")}>
             About
           </Link>
+          <Link to="/contact" className={cn("nav-link", location.pathname === '/contact' && "active")}>
+            Contact
+          </Link>
+          <Link to="/privacy" className={cn("nav-link", location.pathname === '/privacy' && "active")}>
+            Privacy
+          </Link>
+          <Link to="/disclaimer" className={cn("nav-link", location.pathname === '/disclaimer' && "active")}>
+            Disclaimer
+          </Link>
         </nav>
         
         <div className="flex items-center space-x-4">

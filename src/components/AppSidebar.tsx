@@ -1,5 +1,5 @@
 
-import { Home, Calculator, Info, LayoutList } from "lucide-react";
+import { Home, Calculator, Info, LayoutList, Mail, Shield, FileText } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "./ThemeToggle";
@@ -35,6 +35,24 @@ export function AppSidebar() {
       title: "About",
       url: "/about",
       icon: Info,
+    },
+    {
+      title: "Contact",
+      url: "/contact",
+      icon: Mail,
+    }
+  ];
+
+  const legalMenuItems = [
+    {
+      title: "Privacy Policy",
+      url: "/privacy",
+      icon: Shield,
+    },
+    {
+      title: "Disclaimer",
+      url: "/disclaimer",
+      icon: FileText,
     }
   ];
 
@@ -62,6 +80,28 @@ export function AppSidebar() {
           <SidebarGroupContent>
             <SidebarMenu>
               {mainMenuItems.map((item) => (
+                <SidebarMenuItem key={item.title}>
+                  <SidebarMenuButton 
+                    asChild 
+                    isActive={isActive(item.url)}
+                    tooltip={item.title}
+                  >
+                    <Link to={item.url}>
+                      <item.icon />
+                      <span>{item.title}</span>
+                    </Link>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+              ))}
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
+
+        <SidebarGroup>
+          <SidebarGroupLabel>Legal</SidebarGroupLabel>
+          <SidebarGroupContent>
+            <SidebarMenu>
+              {legalMenuItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton 
                     asChild 

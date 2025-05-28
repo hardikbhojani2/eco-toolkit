@@ -10,6 +10,10 @@ import { AppSidebar } from "@/components/AppSidebar";
 import Index from "./pages/Index";
 import ToolsListPage from "./pages/ToolsListPage";
 import ToolsPage from "./pages/ToolsPage";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
+import DisclaimerPage from "./pages/DisclaimerPage";
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +33,10 @@ const App = () => (
                   <Route path="/" element={<Index />} />
                   <Route path="/tools" element={<ToolsListPage />} />
                   <Route path="/tools/:toolRoute" element={<ToolsPage />} />
+                  <Route path="/about" element={<AboutPage />} />
+                  <Route path="/contact" element={<ContactPage />} />
+                  <Route path="/disclaimer" element={<DisclaimerPage />} />
+                  <Route path="/privacy" element={<PrivacyPolicyPage />} />
                   {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                   <Route path="*" element={<NotFound />} />
                 </Routes>
